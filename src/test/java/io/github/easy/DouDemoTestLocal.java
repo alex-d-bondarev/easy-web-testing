@@ -13,7 +13,7 @@ public class DouDemoTestLocal {
         String searchText = "Selenide";
 
         assertThat(
-                MainPage.navigate().
+                new MainPage().
                         searchFor(searchText).
                         getFirstResultSummary(),
 
