@@ -1,7 +1,7 @@
 package io.github.easy.douPages;
 
 import com.codeborne.selenide.SelenideElement;
-import io.github.easy.configs.ConfigHandler;
+import io.github.easy.configs.ConfigProvider;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.*;
@@ -13,7 +13,9 @@ public class MainPage {
 
 
     public MainPage() {
-        open(ConfigHandler.getTestConfig().getBaseUrl());
+        open(ConfigProvider.getConfig().getBaseUrl());
+        System.out.println(
+                "Browser: " + executeJavaScript("return navigator.userAgent"));
     }
 
     public SearchPage searchFor(String value) {

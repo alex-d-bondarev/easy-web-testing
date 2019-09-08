@@ -2,8 +2,8 @@ package io.github.easy.configs;
 
 import org.aeonbits.owner.ConfigFactory;
 
-public class ConfigHandler {
-    public static TestConfig getTestConfig(){
+public class ConfigProvider {
+    public static TestConfig getConfig(){
         return ConfigFactory.create(TestConfig.class);
     }
 }
