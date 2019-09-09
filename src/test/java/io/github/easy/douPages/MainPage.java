@@ -12,10 +12,12 @@ public class MainPage {
     private SelenideElement alternativeSearchInput = $(By.name("q"));
 
 
-    public MainPage() {
+    public MainPage openPage(){
         open(ConfigProvider.getConfig().getBaseUrl());
         System.out.println(
                 "Browser: " + executeJavaScript("return navigator.userAgent"));
+
+        return this;
     }
 
     public SearchPage searchFor(String value) {

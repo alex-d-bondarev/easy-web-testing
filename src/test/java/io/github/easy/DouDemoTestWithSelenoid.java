@@ -33,6 +33,7 @@ public class DouDemoTestWithSelenoid {
 
         assertThat(
                 new MainPage().
+                        openPage().
                         searchFor(searchText).
                         getFirstResultSummary(),
 

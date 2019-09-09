@@ -47,6 +47,7 @@
             <version>1.0.6</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>testcontainers</artifactId>
@@ -57,6 +58,13 @@
             <groupId>org.testcontainers</groupId>
             <artifactId>selenium</artifactId>
             <version>1.12.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java8</artifactId>
+            <version>4.7.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -78,6 +86,14 @@
                         <!--<selenide.browserSize>1920x1080</selenide.browserSize>-->
                     </systemPropertyVariables>
                     <trimStackTrace>false</trimStackTrace>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
         </plugins>

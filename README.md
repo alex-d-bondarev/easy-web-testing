@@ -3,9 +3,14 @@ This is a demo repository for
 [Web Testing is Easy](https://docs.google.com/presentation/d/1lMdhoAD5wJ7FYnnj2SdFudkcbf4JWAwymw8oK1jbp6s/edit?usp=sharing) 
 presentation
 
-## Demo test without containers
+## Demo simple test
 
 Launch [demo test](./src/test/java/io/github/easy/DouDemoTestLocal.java) from your favorite IDE
+
+## Demo test with cucumber
+
+* Install Cucumber plugin to your favorite IDE
+* Launch [demo test](./src/spec/resources/io/github/easy/DouDemoTest.feature) from your favorite IDE
 
 ## Demo test with containers
 
@@ -32,11 +37,12 @@ Otherwise current demo tests will fail. Adding `Dockerfile` or `docker-compose.y
 
 ## Used dependencies
 
+* [Cucumber](https://cucumber.io/docs/guides/)
+* [Hamcrest](http://hamcrest.org/)
+* [JUnit 5](https://junit.org/junit5/)
+* [LOGBack](https://logback.qos.ch/)
+* [Owner](https://github.com/lviggiano/owner)
+* [SLF4J](https://www.slf4j.org/)
 * [Selenide](https://github.com/selenide/selenide)
 * [Selenoid](https://github.com/aerokube/selenoid)
 * [Testcontainers](https://www.testcontainers.org/)
-* [Owner](https://github.com/lviggiano/owner)
-* [JUnit 5](https://junit.org/junit5/)
-* [Hamcrest](http://hamcrest.org/)
-* [SLF4J](https://www.slf4j.org/)
-* [LOGBack](https://logback.qos.ch/)

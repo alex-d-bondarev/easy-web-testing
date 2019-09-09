@@ -14,6 +14,7 @@ public class DouDemoTestLocal {
 
         assertThat(
                 new MainPage().
+                        openPage().
                         searchFor(searchText).
                         getFirstResultSummary(),
 
