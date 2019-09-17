@@ -10,7 +10,7 @@ import org.testcontainers.containers.BrowserWebDriverContainer;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class DouDemoTestWithSelenoid {
+public class DouDemoTestWithContainer {
 
     @Rule
     public BrowserWebDriverContainer browserContainer = BrowserWebDriverContainerProvider.get();

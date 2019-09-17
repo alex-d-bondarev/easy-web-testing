@@ -9,8 +9,7 @@ public interface TestConfig extends Config {
     String getBaseUrl();
 
     /*
-     * List of supported Selenoid browsers, versions and platforms can be found here
-     * (some of them did not work for me though):
+     * List of possibly supported Selenoid browsers, versions and platforms can be found here:
      * https://aerokube.com/selenoid/latest/#_browser_image_information
      * https://github.com/aerokube/cm/releases/
      * https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities

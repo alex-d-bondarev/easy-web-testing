@@ -15,12 +15,14 @@ Launch [demo test](./src/test/java/io/github/easy/DouDemoTestLocal.java) from yo
 ## Demo test with containers
 
 * Start Docker
-* Launch [selenoid demo test](./src/test/java/io/github/easy/DouDemoTestWithSelenoid.java) from your favorite IDE
+* Launch [container demo test](./src/test/java/io/github/easy/DouDemoTestWithContainer.java) from your favorite IDE
 
 #### Important
 
-Currently Selenoid [does not support](https://aerokube.com/selenoid/latest/#_features_not_working)
-pulling browser images automatically.
+Test Containers load browser version based on installed driver version 
+[Richard North (TestContainers creator)](https://vimeo.com/222501136).
+
+Also current demo is not pulling browser images automatically.
 This requires deleting all related containers if [test.properties](./src/test/resources/test.properties)
 were updated with new `browser.name`, `browser.version` or `platform.name`, like:
 ```bash
@@ -44,5 +46,4 @@ Otherwise current demo tests will fail. Adding `Dockerfile` or `docker-compose.y
 * [Owner](https://github.com/lviggiano/owner)
 * [SLF4J](https://www.slf4j.org/)
 * [Selenide](https://github.com/selenide/selenide)
-* [Selenoid](https://github.com/aerokube/selenoid)
 * [Testcontainers](https://www.testcontainers.org/)
