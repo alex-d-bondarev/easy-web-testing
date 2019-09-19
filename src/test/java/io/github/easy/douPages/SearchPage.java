@@ -8,13 +8,14 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 public class SearchPage {
+
     private ElementsCollection summaryResults = elements(By.className("gs-title"));
 
     public String getFirstResultSummary(){
-        int minimumAmountOfResults = 5;
+        int amountOfHiddenResults = 2;
 
         return summaryResults.
-                shouldHave(sizeGreaterThan(minimumAmountOfResults)).
+                shouldHave(sizeGreaterThan(amountOfHiddenResults)).
                 filter(visible).
                 snapshot().
                 first().
